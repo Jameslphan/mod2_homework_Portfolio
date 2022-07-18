@@ -73,6 +73,10 @@ div section {
     padding: 20px;
 }
 
+main section nav ul {
+    /*display: flex;*/
+    flex-wrap: wrap;
+}
 div section p {
     padding: 5px;
     height: 100%;
@@ -100,7 +104,7 @@ div section p {
 .flex-container {
     padding: 10px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .div1 {
@@ -110,14 +114,31 @@ div section p {
 }
 
 .div2 {
+    display:flex;
     padding: 0 10px 10px 20px;
     border-left: 7px solid var(--headerBorderColor);
     width: 85%;
 }
 
+.div3 {
+    display: flex;
+    max-width: 50%;
+}
 #firstProject {
     border: 2px solid var(--headerBorderColor);
     border-radius: 5px;
     max-width: 100%;
     max-height: 60%;
+}
+
+.nextProject {
+    border: 2px solid var(--headerBorderColor);
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#div4 {
+    display: flex;
+    flex-wrap: wrap;
 }
