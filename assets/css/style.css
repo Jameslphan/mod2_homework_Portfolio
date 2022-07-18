@@ -1,6 +1,7 @@
 :root {
     --headerTextColor: rgb(42, 38, 49);
     --headerBorderColor: rgb(59, 58, 59);
+    --backgroundColor:rgb(190, 188, 179);
 }
 
 /* Universal Selector */
@@ -11,6 +12,9 @@
 }
 
 /* Element Selectors */
+body {
+    background-color: var(--backgroundColor);
+}
 h1 {
     display: inline-block;
     padding: 20px;
@@ -21,7 +25,7 @@ header {
     padding: 20px;
     display: block;
     height: 200px;
-    background-color: rgb(190, 188, 179);
+    background-color: var(--backgroundColor);
     color: var(--headerTextColor);
 }
 
@@ -79,6 +83,8 @@ div section p {
     font-size: 20px;
     color: rgb(237, 225, 225);
 }
+
+
 /* Class and ID Selectors */
 .pageGarnish {
     transform: scaleX(-1);
@@ -107,5 +113,11 @@ div section p {
     padding: 0 10px 10px 20px;
     border-left: 7px solid var(--headerBorderColor);
     width: 85%;
-    float: right;
+}
+
+#firstProject {
+    border: 2px solid var(--headerBorderColor);
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 60%;
 }
