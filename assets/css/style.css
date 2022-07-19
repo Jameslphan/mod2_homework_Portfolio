@@ -8,7 +8,7 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin 0;
+    margin: 0;
 }
 
 /* Element Selectors */
@@ -143,4 +143,47 @@ div section p {
     max-height: 100%;
     display: flex;
     flex-wrap: wrap;
+}
+
+.container {
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 25%;
+    left: 0%;
+    font-size: 15px;
+    background-color: var(--headerBorderColor);
+    color: var(--backgroundColor)
+}
+
+.container1 {
+    position: relative;
+}
+
+.text-block1 {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 60%;
+    left: 0%;
+    font-size: 15px;
+    background-color: var(--headerBorderColor);
+    color: var(--backgroundColor)
+}
+
+#contactInfo {
+    display: flex;
+}
+
+#div5 {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    border-left: 7px solid var(--headerBorderColor);
+    width: 85%;
 }
